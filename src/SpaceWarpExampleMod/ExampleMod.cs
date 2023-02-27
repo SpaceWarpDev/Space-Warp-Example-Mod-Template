@@ -17,7 +17,7 @@ public class ExampleMod : Mod {
         // Load the configuration
         if (ManagerLocator.TryGet(out ConfigurationManager configManager)) {
             if (configManager.TryGet(Info.mod_id, out var config)) {
-                ExampleConfig cfg = (T)config.configObject;
+                ExampleConfig cfg = (ExampleConfig)config.configObject;
                 Logger.Info($"pi = {cfg.pi}");
                 Logger.Info($"e = {cfg.e}");
                 Logger.Info($"2 = {cfg.two}");
@@ -31,7 +31,7 @@ public class ExampleMod : Mod {
 
         // Load an asset bundle file
         // Also mods have an Info field that reflects the modinfo.json file
-        if (ResourceManager.TryGet($"{Info.mod_id}/test/test.png",out Texture2D tex)) {
+        if (ResourceManager.TryGetAsset($"{Info.mod_id}/test/test.png",out Texture2D tex)) {
             Logger.Info($"successfully loaded {Info.mod_id}/test/test.png - w = {tex.width}, h = {tex.height}");
         } else {
             Logger.Warn($"unable to load {Info.mod_id}/test/test.png");
