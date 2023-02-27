@@ -11,5 +11,6 @@
     <Reference Include="..\external_dlls\UnityEngine.dll"/>
     <Reference Include="..\external_dlls\UnityEngine.CoreModule.dll"/>
     <Reference Include="..\external_dlls\Assembly-CSharp.dll"/>
+    <Reference Include="..\external_dlls\Newtonsoft.Json.dll"/>
   </ItemGroup>
 </Project>
