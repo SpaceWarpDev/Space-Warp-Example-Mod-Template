@@ -1,5 +1,5 @@
 using SpaceWarp.API.Configuration;
-using Newtonsoft.JSON;
+using Newtonsoft.Json;
 
 namespace SpaceWarpExampleMod;
 
