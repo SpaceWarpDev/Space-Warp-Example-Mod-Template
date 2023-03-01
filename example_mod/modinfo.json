@@ -2,13 +2,12 @@
     "mod_id": "example_mod",
     "author": "cheese3660",
     "name": "Example Mod",
-    "description": "An example mod for Space Warp",
-    "source": "https://github.com/cheese3660/Space-Warp-Example-Mod-Template",
-    "version": "0.0.1",
-    "dependencies": [
-    ],
+    "description": "Example Mod For Space Warp",
+    "source": "https://github.com/SpaceWarpDev/Space-Warp-Example-Mod-Template",
+    "version": "1.0.0",
+    "dependencies": [],
     "ksp2_version": {
-        "min": "0.0.0",
+        "min": "*",
         "max": "*"
     }
 }
